@@ -16,11 +16,11 @@ public class SellerController {
         Location manizales = new Location("17001" ,"Manizales");
         Location pereira = new Location("66001" ,"Pereira");
 
-        Seller sebas = new Seller("Sebas","Garcia", "26" , "H" ,"1053866543" , "Manizales");
-        Seller camilo = new Seller("camilo","Lopez", "18" , "H" ,"1053863309" , "Pereira");
-        Seller pedro = new Seller("Pedro","Hincapie", "45" , "H" ,"1053855423" , "Manizales");
-        Seller camila = new Seller("Camila","Flores", "28" , "M" ,"1053869433" , "Manizales");
-        Seller fabio = new Seller("Fabio","Garcia", "52" , "H" ,"75067789" , "Manizales");
+        Seller sebas = new Seller("Sebas","Garcia", (byte)26 , "H" ,"1053866543" , "Manizales");
+        Seller camilo = new Seller("camilo","Lopez", (byte)18 , "H" ,"1053863309" , "Pereira");
+        Seller pedro = new Seller("Pedro","Hincapie", (byte)45 , "H" ,"1053855423" , "Manizales");
+        Seller camila = new Seller("Camila","Flores", (byte)28 , "M" ,"1053869433" , "Manizales");
+        Seller fabio = new Seller("Fabio","Garcia", (byte)52 , "H" ,"75067789" , "Manizales");
 
         return  sebas ;
     }

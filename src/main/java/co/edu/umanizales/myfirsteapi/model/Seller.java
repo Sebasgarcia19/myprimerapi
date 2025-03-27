@@ -12,7 +12,7 @@ import lombok.Setter;
 public class Seller {
     private String name;
     private String lastname;
-    private String age;
+    private byte age;
     private String gander;
     private String identification;
     private String location;
