@@ -22,6 +22,6 @@ public class SellerController {
         Seller camila = new Seller("Camila","Flores", "28" , "M" ,"1053869433" , "Manizales");
         Seller fabio = new Seller("Fabio","Garcia", "52" , "H" ,"75067789" , "Manizales");
 
-        return sebas ;
+        return  sebas ;
     }
 }
