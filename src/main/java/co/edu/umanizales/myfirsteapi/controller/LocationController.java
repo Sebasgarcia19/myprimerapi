@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class LocationController {
     @GetMapping
     public String getLocation(){
+
         return "Manizales";
     }
 

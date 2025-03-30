@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path = "/store" )
 public class StoreController {
 @GetMapping
-    public String hello(){
-        return "Hola lindos";
+    public String getStore(){
+        return "Ferreteria";
     }
 }

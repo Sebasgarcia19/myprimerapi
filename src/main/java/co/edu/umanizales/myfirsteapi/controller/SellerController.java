@@ -10,7 +10,7 @@ import java.security.PublicKey;
 
 @RestController
 @RequestMapping(path = "/Seller")
-public class SellerController {
+public class  SellerController {
     @GetMapping
     public Seller getSeller(){
         Location manizales = new Location("17001" ,"Manizales");
