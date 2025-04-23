@@ -1,5 +1,6 @@
 package co.edu.umanizales.myfirsteapi.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,8 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(path = "/store" )
 public class StoreController {
+    /*
 @GetMapping
     public String getStore(){
         return "Ferreteria";
     }
+
+     */
+
 }
+

@@ -1,15 +1,38 @@
 package co.edu.umanizales.myfirsteapi.controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+
+import co.edu.umanizales.myfirsteapi.model.Location;
+import co.edu.umanizales.myfirsteapi.service.LocationService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(path = "/location")
 public class LocationController {
-    @GetMapping
-    public String getLocation(){
 
-        return "Manizales";
+    private final LocationService locationService;
+
+    public LocationController(LocationService locationService) {
+        this.locationService = locationService;
     }
 
+    @GetMapping
+    public List<Location> getLocations() {
+        return locationService.getLocations();
+    }
+
+    @GetMapping("/{code}")
+    public Location getLocationByCode(@PathVariable String code) {
+        return locationService.getLocationByCode(code);
+    }
+
+    @GetMapping("/name/{name}")
+    public Location getLocationByName(@PathVariable String name) {
+        return locationService.getLocationByName(name);
+    }
+
+    @GetMapping("/states")
+    public List<Location> getLocationsByStates() {
+        return locationService.getStates();
+    }
 }
