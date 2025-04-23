@@ -9,6 +9,7 @@ import lombok.Setter;
 public class Location {
     public String code;
     public  String description;
+    public  String name;
 
 
 }
