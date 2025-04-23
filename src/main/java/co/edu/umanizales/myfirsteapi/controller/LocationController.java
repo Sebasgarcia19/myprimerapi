@@ -35,4 +35,8 @@ public class LocationController {
     public List<Location> getLocationsByStates() {
         return locationService.getStates();
     }
+    @GetMapping(path = "/initialLetter/{initialLetter}")
+    public List<Location> getLocationByInitialLetter (@PathVariable String initialLetter)
+    { return locationService.getLocationByInitialLetter(initialLetter);}
+
 }

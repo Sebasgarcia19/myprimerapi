@@ -75,4 +75,13 @@ public class LocationService {
         }
         return states;
     }
+    public List<Location> getLocationByInitialLetter (String initialLetter) {
+        List<Location> initialLetterArray = new ArrayList<>();
+        for (Location location : locations) {
+            if(location.getDescription().charAt(0)== initialLetter.charAt(0)){
+                initialLetterArray.add(location);
+            }
+        }
+        return initialLetterArray;
+}
 }
