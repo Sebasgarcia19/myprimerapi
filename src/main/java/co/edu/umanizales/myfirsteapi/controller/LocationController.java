@@ -39,4 +39,8 @@ public class LocationController {
     public List<Location> getLocationByInitialLetter (@PathVariable String initialLetter)
     { return locationService.getLocationByInitialLetter(initialLetter);}
 
+    @GetMapping("/statesandcapitals")
+    public List<Location> getStatesAndCapitals() {
+        return locationService.getStatesAndCapitals();
+    }
 }

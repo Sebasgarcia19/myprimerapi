@@ -24,4 +24,5 @@ public class  SellerController {
 
         return  sebas ;
     }
+
 }
