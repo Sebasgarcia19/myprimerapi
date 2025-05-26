@@ -1,14 +1,14 @@
 package co.edu.umanizales.myfirsteapi.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+
 @Getter
 @Setter
-@AllArgsConstructor
-public class Location {
-    public String code;
-    public  String description;
 
+public class Location extends Parameter {
+
+    public Location(String code, String description) {
+        super(code, description);
+    }
 }
-

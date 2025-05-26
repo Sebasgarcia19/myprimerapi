@@ -1,15 +1,15 @@
 package co.edu.umanizales.myfirsteapi.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-@Setter
-@Getter
-@AllArgsConstructor
-public class Store {
-    private String code;
-    private String name;
-    private String address;
-    private Location city;
 
+@Getter
+@Setter
+@Data
+@AllArgsConstructor
+public abstract class Parameter {
+    private String code;
+    private String description;
 }
