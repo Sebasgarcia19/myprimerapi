@@ -158,6 +158,6 @@ public class LocationService {
             }
         }
         return names;
-}
+    }
 
 }

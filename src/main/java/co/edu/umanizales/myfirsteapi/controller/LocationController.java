@@ -24,6 +24,7 @@ public class LocationController {
         return locationService.getLocations();
 
     }
+
     @GetMapping(path = "/{code}")
     public Location getLocationByCode(@PathVariable String code) {
         return locationService.getLocationByCode(code);
@@ -63,5 +64,6 @@ public class LocationController {
     @GetMapping(path = "/amountLetters/{length}")
     public List<Location> getAmountLettersByName(@PathVariable String length) {
         return locationService.getLocationByAmount(Integer.parseInt(length));
+    }
 }
-}
+

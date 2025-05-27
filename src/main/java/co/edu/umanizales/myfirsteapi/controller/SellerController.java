@@ -22,6 +22,7 @@ public class SellerController {
     public List<Seller> getSellers() {
         return sellerService.getSellers();
     }
+
     @GetMapping(path = "/{identification}")
     public Seller getSellerByIdentification(@PathVariable String identification) {
         return sellerService.getSellerByIdentification(identification);
